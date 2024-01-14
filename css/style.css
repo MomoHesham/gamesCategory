@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
   font-family: "Nerko One";
   font-weight: 400;
   src: url(../fonts/NerkoOne-Regular.ttf);
@@ -12,12 +12,15 @@
   font-family: "Comic Neue Regular";
   font-weight: 400;
   src: url(../fonts/ComicNeue-Regular.ttf);
-} */
+}
 body {
-  font-family:  cursive;
+  font-family: "Comfortaa Regular", cursive;
 }
 .x-small{
   font-size: smaller;
+}
+ h5{
+  font-family: "Nerko One", cursive;
 }
 /* loading */
 #loading{
