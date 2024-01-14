@@ -1,0 +1,135 @@
+/* @font-face {
+  font-family: "Nerko One";
+  font-weight: 400;
+  src: url(../fonts/NerkoOne-Regular.ttf);
+}
+@font-face {
+  font-family: "Comfortaa Regular";
+  font-weight: 400;
+  src: url(../fonts/Comfortaa-Regular.ttf);
+}
+@font-face {
+  font-family: "Comic Neue Regular";
+  font-weight: 400;
+  src: url(../fonts/ComicNeue-Regular.ttf);
+} */
+body {
+  font-family:  cursive;
+}
+.x-small{
+  font-size: smaller;
+}
+/* loading */
+#loading{
+  position: fixed;
+background-color: rgba(0,0,0,0.4);
+  inset: 0;
+  z-index: 99999;
+}
+.loader {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  animation: rotate 1.5s ease-in infinite alternate;
+}
+.loader::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #FF3D00;
+  background: currentColor;
+  width: 64px;
+  height: 32px;
+  border-radius: 0 0 50px 50px;
+}
+.loader::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  background: #FFF;
+  width: 8px;
+  height: 64px;
+  animation: rotate 1.2s linear infinite alternate-reverse;
+}
+
+@keyframes rotate {
+  100% { transform: rotate(360deg)}
+}
+      
+
+/* menu style */
+
+#menu header img{
+  height: 25vh;
+}
+nav.navbar {
+  background-color: #3a497b;
+  border-radius: 20px;
+  /* margin-top: -50px; */
+}
+nav .navbar-brand img {
+  width: 20%;
+}
+
+
+nav ul.navbar-nav li.nav-item a.nav-link {
+  color: white;
+  font-size: 0.8rem;
+  font-style: italic;
+  cursor: pointer;
+}
+nav ul.navbar-nav li.nav-item a.nav-link.active,
+nav ul.navbar-nav li.nav-item a.nav-link:hover {
+  color: #0d87b9;
+}
+
+/* home style */
+
+#home .card .imageContainer .imgOverlay {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  backdrop-filter: grayscale(0.8);
+  top: 1rem;
+  bottom: 1rem;
+  transition: all 0.5s;
+}
+#home .card .imageContainer {
+  position: relative;
+}
+#home .card:hover .imageContainer .imgOverlay {
+  backdrop-filter: grayscale(0);
+}
+#home .card{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#home .card:hover{
+    transform: scale(1.1);
+}
+#home .card .card-body p{
+    height: 100px;
+    overflow: hidden;
+}
+#home .card .card-footer span {
+    font-size: x-small;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 16px;
+    padding: 0.25rem;
+    padding-inline: 0.5rem;
+}
+#home .card .card-body a.btn{
+  background-color: #0d6efda1;
+  transition: all 0.5s;
+}
+#home .card:hover .card-body a.btn{
+  background-color: #0d6efd !important;
+}
+/* details section */
+#detailsData{
+  position: fixed;
+  inset: 0;
+  display: none;
+}
